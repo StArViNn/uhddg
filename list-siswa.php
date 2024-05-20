@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pendaftaran Siswa Baru | SMK Coding</title>
+    <title>Pendaftaran Buku Baru | SMK Taruna Bhakti</title>
 </head>
 
 <body>
     <header>
-        <h3>Siswa yang sudah mendaftar</h3>
+        <h3>Buku Yang Sudah Terdaftar</h3>
     </header>
 
     <nav>
@@ -21,11 +21,9 @@
     <thead>
         <tr>
             <th>No</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>Jenis Kelamin</th>
-            <th>Agama</th>
-            <th>Sekolah Asal</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Tahun Terbit</th>
             <th>Tindakan</th>
         </tr>
     </thead>
@@ -39,11 +37,9 @@
             echo "<tr>";
 
             echo "<td>".$siswa['id']."</td>";
-            echo "<td>".$siswa['nama']."</td>";
-            echo "<td>".$siswa['alamat']."</td>";
-            echo "<td>".$siswa['jenis_kelamin']."</td>";
-            echo "<td>".$siswa['agama']."</td>";
-            echo "<td>".$siswa['sekolah_asal']."</td>";
+            echo "<td>".$siswa['judulbuku']."</td>";
+            echo "<td>".$siswa['pengarang']."</td>";
+            echo "<td>".$siswa['tahun_terbit']."</td>";
 
             echo "<td>";
             echo "<a href='form-edit.php?id=".$siswa['id']."'>Edit</a> | ";
