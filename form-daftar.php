@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulir Pendaftaran Siswa Baru | SMK Coding</title>
+    <title>Formulir Penambahan Buku | SMK Taruna Bhakti</title>
 </head>
 
 <body>
     <header>
-        <h3>Formulir Pendaftaran Siswa Baru</h3>
+        <h3>Formulir Penambahan Buku</h3>
     </header>
 
     <form action="proses-pendaftaran.php" method="POST">
@@ -14,31 +14,16 @@
         <fieldset>
 
         <p>
-            <label for="nama">Nama: </label>
-            <input type="text" name="nama" placeholder="nama lengkap" />
+            <label for="judulbuku">Nama Buku: </label>
+            <input type="text" name="judulbuku" placeholder="nama buku" />
         </p>
         <p>
-            <label for="alamat">Alamat: </label>
-            <textarea name="alamat"></textarea>
+            <label for="pengarang">Pengarang: </label>
+            <textarea name="pengarang"></textarea>
         </p>
         <p>
-            <label for="jenis_kelamin">Jenis Kelamin: </label>
-            <label><input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki</label>
-            <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
-        </p>
-        <p>
-            <label for="agama">Agama: </label>
-            <select name="agama">
-                <option>Islam</option>
-                <option>Kristen</option>
-                <option>Hindu</option>
-                <option>Budha</option>
-                <option>Atheis</option>
-            </select>
-        </p>
-        <p>
-            <label for="sekolah_asal">Sekolah Asal: </label>
-            <input type="text" name="sekolah_asal" placeholder="nama sekolah" />
+            <label for="tahun_terbit">Tahun Terbit: </label>
+            <input type="text" name="tahun_terbit" placeholder="tahun terbit" />
         </p>
         <p>
             <input type="submit" value="Daftar" name="daftar" />
