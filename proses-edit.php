@@ -7,14 +7,12 @@ if(isset($_POST['simpan'])){
 
     // ambil data dari formulir
     $id = $_POST['id'];
-    $nama = $_POST['nama'];
-    $alamat = $_POST['alamat'];
-    $jk = $_POST['jenis_kelamin'];
-    $agama = $_POST['agama'];
-    $sekolah = $_POST['sekolah_asal'];
+    $judulbuku = $_POST['judulbuku'];
+    $pengarang = $_POST['pengarang'];
+    $tahun_terbit = $_POST['tahun_terbit'];
 
     // buat query update
-    $sql = "UPDATE calon_siswa SET nama='$nama', alamat='$alamat', jenis_kelamin='$jk', agama='$agama', sekolah_asal='$sekolah' WHERE id=$id";
+    $sql = "UPDATE calon_siswa SET judulbuku='$judulbuku', pengarang='$pengarang', tahun_terbit='$tahun_terbit' WHERE id=$id";
     $query = mysqli_query($db, $sql);
 
     // apakah query update berhasil?
